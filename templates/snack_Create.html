@@ -1,0 +1,12 @@
+{% extends "_base.html" %}
+
+{% block title %}Snacks Create{% endblock %}
+
+
+{% block content %}
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" name="submit" id="submit" value="submit">
+</form>
+{% endblock %}
